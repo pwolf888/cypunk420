@@ -46,3 +46,51 @@ var app = {
 app.initialize();
 
 
+$(document).ready(function () {
+   console.log('jq-working');
+
+    window.player = $('#player');
+    window.timeoutId = 0;
+});
+
+
+$('body').on('mousedown', function (evt) {
+
+    var touchX = evt.clientX;
+    var middleX = window.screen.width / 2;
+
+    if(touchX >= 0 && touchX <= middleX) {
+        walkLeft();
+        console.log('mouse-entered');
+
+    } else if(touchX > middleX) {
+       walkRight();
+    }
+
+
+}).on('mouseup', function () {
+
+    idle();
+
+
+});
+
+
+function walkRight() {
+    player.removeClass('idle');
+    player.removeClass('walkLeft');
+    player.addClass('walkRight');
+    
+}
+
+function walkLeft() {
+    player.removeClass('idle');
+    player.removeClass('walkRight');
+    player.addClass('walkLeft');
+}
+
+function idle() {
+    player.removeClass('walkRight');
+    player.removeClass('walkLeft');
+    player.addClass('idle');
+}

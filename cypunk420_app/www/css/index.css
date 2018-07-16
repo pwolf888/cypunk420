@@ -16,11 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+/*Canvas elements ***************************************/
 #wrapper{
 
     width: 100vw;
     height: 100vh;
-    background-color:deeppink;
+    background-color:grey;
     position: relative;
     margin: -10px;
 
@@ -38,9 +40,58 @@
 #player {
     width:  50px;
     height: 80px;
-    background-color: yellow;
+    background-color: purple;
     position: absolute;
     bottom: 51px;
     left:50%;
     transform: translateX(-50%);
+
+
+
+}
+
+.idle {
+    animation-name: idle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.walkLeft{
+    animation-name: walkLeft;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.walkRight {
+    animation-name: walkRight;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animations *******************************/
+
+
+@keyframes idle {
+
+    0%   {background-color: black;}
+    50%  {background-color: purple;}
+    100% {background-color: black;}
+
+}
+
+@keyframes walkLeft {
+
+    0%  {background: linear-gradient(90deg,black,black);}
+    50%  {background: linear-gradient(90deg,purple,black);}
+    100%  {background: linear-gradient(90deg, black,black);}
+
+}
+
+@keyframes walkRight {
+
+    0%  {background: linear-gradient(90deg,black, black);}
+    50%  {background: linear-gradient(90deg,black, purple);}
+    100%  {background: linear-gradient(90deg, black, black);}
+
 }
