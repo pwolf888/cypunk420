@@ -45,35 +45,54 @@ var app = {
 
 app.initialize();
 
+window.deviceScreen = $('#wrapper');
+
 
 $(document).ready(function () {
    console.log('jq-working');
 
+
     window.player = $('#player');
-    window.timeoutId = 0;
+
+
 });
 
+$(function () {
 
-$('body').on('mousedown', function (evt) {
+    deviceScreen.bind('vmousedown', swipeLeftHandler).on('vmouseup', function () {
+        idle();
+    });
+    function swipeLeftHandler( event ){
+        //console.log(event.swipestart.coords[0]);
+        console.log(event);
 
-    var touchX = evt.clientX;
-    var middleX = window.screen.width / 2;
+        var touchX = event.clientX;
+        console.log(touchX);
+        var middleX = window.screen.width / 2;
+        console.log(middleX);
 
-    if(touchX >= 0 && touchX <= middleX) {
-        walkLeft();
-        console.log('mouse-entered');
+        if(touchX >= 0 && touchX <= middleX) {
+            walkLeft();
+            console.log('mouse-entered');
 
-    } else if(touchX > middleX) {
-       walkRight();
+        } else if(touchX > middleX) {
+            walkRight();
+        }
+
     }
 
 
-}).on('mouseup', function () {
-
-    idle();
-
+    // deviceScreen.bind('tap', swipeRightHandler).on('vmouseup', function () {
+    //     idle();
+    // });
+    // function swipeRightHandler( event ){
+    //     console.log(event);
+    //     walkRight();
+    // }
 
 });
+
+
 
 
 function walkRight() {
@@ -94,3 +113,15 @@ function idle() {
     player.removeClass('walkLeft');
     player.addClass('idle');
 }
+
+//var touchX = event.clientX;
+//console.log(touchX);
+//var middleX = window.screen.width / 2;
+
+// if(touchX >= 0 && touchX <= middleX) {
+//     walkLeft();
+//     console.log('mouse-entered');
+//
+// } else if(touchX > middleX) {
+//     walkRight();
+// }
