@@ -38,9 +38,9 @@
 }
 
 #player {
-    width:  50px;
-    height: 80px;
-    background-color: purple;
+    width:  80px;
+    height: 200px;
+
     position: absolute;
     bottom: 51px;
     left:50%;
@@ -52,7 +52,7 @@
 
 .idle {
     animation-name: idle;
-    animation-duration: 2s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -74,9 +74,12 @@
 
 @keyframes idle {
 
-    0%   {background-color: black;}
-    50%  {background-color: purple;}
-    100% {background-color: black;}
+    0%   {background-image: url("../img/player_idle_001.png");}
+    25%  {background-image: url("../img/player_idle_002.png");}
+    50% {background-image: url("../img/player_idle_003.png");}
+    75% {background-image: url("../img/player_idle_004.png");}
+    90% {background-image: url("../img/player_idle_003.png");}
+    100% {background-image: url("../img/player_idle_002.png");}
 
 }
 
