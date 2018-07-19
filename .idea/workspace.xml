@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ec077b7-facb-4b05-a0fa-3455b48e8751" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/cypunk420_app/www/img/idle_001.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cypunk420_app/www/img/idle_002.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cypunk420_app/www/img/idle_003.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cypunk420_app/www/img/idle_004.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cypunk420_app/www/img/idle_005.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cypunk420_app/www/css/index.css" afterPath="$PROJECT_DIR$/cypunk420_app/www/css/index.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +54,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cypunk420_app/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="-300">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,6 +138,13 @@
               <item name="cypunk420" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cypunk420_app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cypunk420" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cypunk420" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cypunk420_app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -148,6 +161,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypunk420_app/www/img" />
       <recent name="$PROJECT_DIR$/cypunk420_app" />
     </key>
   </component>
@@ -178,12 +192,12 @@
       <updated>1530332975193</updated>
       <workItem from="1530332976553" duration="843000" />
       <workItem from="1531297671847" duration="158000" />
-      <workItem from="1531728607899" duration="15265000" />
+      <workItem from="1531728607899" duration="17406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16266000" />
+    <option name="totallyTimeSpent" value="18407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1260" height="691" extended-state="0" />
@@ -318,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypunk420_app/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="-300">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>

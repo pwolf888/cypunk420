@@ -22,7 +22,7 @@
 
     width: 100vw;
     height: 100vh;
-    background-color:grey;
+    /*background-color:grey;*/
     position: relative;
     margin: -10px;
 
@@ -40,7 +40,7 @@
 #player {
     width:  80px;
     height: 200px;
-
+    background-image: url("../img/idle_001.png");
     position: absolute;
     bottom: 51px;
     left:50%;
@@ -51,10 +51,16 @@
 }
 
 .idle {
-    animation-name: idle;
-    animation-duration: 20s;
+    /*animation-name: idle;*/
+    /*animation-duration: 5s;*/
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
+    /*animation-delay:5s;*/
+    animation: idle 2s steps(8) 1;
+    animation-delay: 5s;
+
+
+
 }
 .walkLeft{
     animation-name: walkLeft;
@@ -67,6 +73,7 @@
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
 
 /* Animations *******************************/
@@ -74,12 +81,14 @@
 
 @keyframes idle {
 
-    0%   {background-image: url("../img/player_idle_001.png");}
-    25%  {background-image: url("../img/player_idle_002.png");}
-    50% {background-image: url("../img/player_idle_003.png");}
-    75% {background-image: url("../img/player_idle_004.png");}
-    90% {background-image: url("../img/player_idle_003.png");}
-    100% {background-image: url("../img/player_idle_002.png");}
+    0%   {background-image: url("../img/idle_001.png");}
+    15%  {background-image: url("../img/idle_002.png");}
+    30% {background-image: url("../img/idle_003.png");}
+    45% {background-image: url("../img/idle_004.png");}
+    60% {background-image: url("../img/idle_005.png");}
+    75% {background-image: url("../img/idle_004.png");}
+    90% {background-image: url("../img/idle_003.png");}
+    100% {background-image: url("../img/idle_002.png");}
 
 }
 
