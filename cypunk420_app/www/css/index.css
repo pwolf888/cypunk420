@@ -18,11 +18,14 @@
  */
 
 /*Canvas elements ***************************************/
+.app {
+    background-size: cover;
+}
 #wrapper{
 
     width: 100vw;
     height: 100vh;
-    /*background-color:grey;*/
+    background-color:deeppink;
     position: relative;
     margin: -10px;
 
@@ -54,25 +57,34 @@
     /*animation-name: idle;*/
     /*animation-duration: 5s;*/
     animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
     /*animation-iteration-count: infinite;*/
     /*animation-delay:5s;*/
-    animation: idle 2s steps(8) 1;
+    animation: idle 5s steps(8) 1;
+    -webkit-animation: idle 5s steps(8) 1;
     animation-delay: 5s;
 
 
 
 }
 .walkLeft{
-    animation-name: walkLeft;
-    animation-duration: 2s;
+    /*animation-name: walkLeft;*/
+    /*animation-duration: 2s;*/
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    /*animation-iteration-count: infinite;*/
+    /*animation: steps();*/
+    animation: walkLeft 0.2s steps(2) infinite;
+    -webkit-animation: walkLeft 0.2s steps(2) infinite;
+
 }
 .walkRight {
-    animation-name: walkRight;
-    animation-duration: 2s;
+    /*animation-name: walkRight;*/
+    /*animation-duration: 1s;*/
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
+    animation: walkRight 0.2s steps(2) infinite;
+    -webkit-animation: walkRight 0.2s steps(2) infinite;
 
 }
 
@@ -94,16 +106,53 @@
 
 @keyframes walkLeft {
 
-    0%  {background: linear-gradient(90deg,black,black);}
-    50%  {background: linear-gradient(90deg,purple,black);}
-    100%  {background: linear-gradient(90deg, black,black);}
+    to {background-image: url("../img/walk_left002.png");}
+
+    from{background-image: url("../img/walk_left001.png");}
+
+
+
 
 }
 
 @keyframes walkRight {
 
-    0%  {background: linear-gradient(90deg,black, black);}
-    50%  {background: linear-gradient(90deg,black, purple);}
-    100%  {background: linear-gradient(90deg, black, black);}
+    to  {background-image: url("../img/walk_right003.png");}
+
+    from {background-image: url("../img/walk_right001.png");}
+
+
+}
+
+@-webkit-keyframes idle {
+
+    0%   {background-image: url("../img/idle_001.png");}
+    15%  {background-image: url("../img/idle_002.png");}
+    30% {background-image: url("../img/idle_003.png");}
+    45% {background-image: url("../img/idle_004.png");}
+    60% {background-image: url("../img/idle_005.png");}
+    75% {background-image: url("../img/idle_004.png");}
+    90% {background-image: url("../img/idle_003.png");}
+    100% {background-image: url("../img/idle_002.png");}
+
+}
+
+@-webkit-keyframes  walkLeft {
+
+    to {background-image: url("../img/walk_left002.png");}
+
+    from{background-image: url("../img/walk_left001.png");}
+
+
+
+
+}
+
+@-webkit-keyframes  walkRight {
+
+    to  {background-image: url("../img/walk_right003.png");}
+
+    from {background-image: url("../img/walk_right001.png");}
+
 
 }
